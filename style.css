@@ -1,4 +1,71 @@
 html {
     background-color: #111;
-    color: #FFF;
+    color: #EEE;
+}
+
+body {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    color: inherit;
+    background: inherit;
+}
+
+a {
+    color: #0A0;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #0A0;
+}
+
+a:hover {
+    color: #0F0;
+}
+
+a:active {
+    color: #C00;
+}
+
+.menu li a {
+    display: block;
+}
+
+.menu {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.menu li {
+    display: block;
+    float: left;
+    width: 100px;
+    min-height: 1.5em;
+    background: #222;
+    border: #444 solid 2px;
+    border-radius: 14px;
+    margin: 4px;
+    padding-top: 4px;
+}
+
+.menu li:hover {
+    background: #000;
+}
+
+p {
+    text-align: justify;
+}
+
+pre {
+    color: #008000;
+    overflow-x: auto;
 }
