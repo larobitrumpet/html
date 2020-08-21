@@ -70,6 +70,14 @@ pre {
     overflow-x: auto;
 }
 
+.see {
+    color: rgba(238, 238, 238, 0.75);
+}
+
+.see:hover {
+    color: rgba(238, 238, 238, 1);
+}
+
 .hidden {
     display: none;
 }
