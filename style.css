@@ -69,3 +69,7 @@ pre {
     color: #008000;
     overflow-x: auto;
 }
+
+.hidden {
+    display: none;
+}
