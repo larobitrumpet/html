@@ -4,12 +4,17 @@ html {
 }
 
 body {
+    min-height: 100vh;
+    margin: 0;
+    background: inherit;
+}
+
+.content {
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
     color: inherit;
-    background: inherit;
 }
 
 a {
@@ -42,6 +47,7 @@ a:active {
 nav {
     margin-left: auto;
     margin-right: auto;
+    padding: 16px;
     text-align: center;
 }
 
@@ -80,4 +86,12 @@ pre {
 
 .hidden {
     display: none;
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: 0;
+    padding: 32px;
+    background-color: #000;
+    border-top: solid #EEE 2px;
 }
