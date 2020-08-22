@@ -1,3 +1,7 @@
+* {
+    min-width: fit-content;
+}
+
 html {
     background-color: #111;
     color: #EEE;
