@@ -92,6 +92,10 @@ pre {
     display: none;
 }
 
+li {
+    list-style-type: none;
+}
+
 footer {
     margin-top: auto;
     margin-bottom: 0;
