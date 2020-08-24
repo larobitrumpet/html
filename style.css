@@ -16,7 +16,7 @@ body {
 .content {
     max-width: 80%;
     min-height: 75vh;
-    margin: 64px;
+    margin: 32px;
     padding: 1em;
     color: inherit;
 }
