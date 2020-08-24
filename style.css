@@ -14,9 +14,9 @@ body {
 }
 
 .content {
-    max-width: 80%;
     min-height: 75vh;
-    margin: 32px;
+    margin-left: 10%;
+    margin-right: 10%;
     padding: 1em;
     color: inherit;
 }
