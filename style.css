@@ -3,7 +3,7 @@
 }
 
 html {
-    background-color: #111;
+    background-color: #222;
     color: #EEE;
 }
 
@@ -60,15 +60,15 @@ nav {
     float: left;
     width: 100px;
     min-height: 1.5em;
-    background: #222;
-    border: #444 solid 2px;
+    background: #444;
+    border: #666 solid 2px;
     border-radius: 14px;
     margin: 4px;
     padding-top: 4px;
 }
 
 .menu li:hover {
-    background: #000;
+    background: #111;
 }
 
 p {
@@ -76,12 +76,11 @@ p {
 }
 
 pre {
-    color: #008000;
     overflow-x: auto;
-}
-
-li {
-    list-style-type: none;
+    background: #444;
+    border: #000 solid 2px;
+    border-radius: 14px;
+    padding: 6px;
 }
 
 footer {
