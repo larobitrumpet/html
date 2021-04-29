@@ -21,6 +21,124 @@
     <div class="content">
         <h1>Practice Problems</h1>
         <p>Computer science can be very challenging, and the best way to get better is to practice a lot. So, for my tutoring project, I have created this list of practice problems designed for people taking CSCI-0012.</p>
+        <ul>
+            <li>
+                <p>Given a person's weight and height, calculate their BMI (body mass index). BMI = weight / (height)^2.</p>
+            </li>
+            <li>
+                <p>Write a program that converts between Fahrenheit and Celsius.</p>
+            </li>
+            <li>
+                <p>Given the radius of a circle, calculate the area and circumference of the circle.</p>
+            </li>
+            <li>
+                <p>Given a shower that is <code>length</code> by <code>width</code> by <code>height</code>, and square tiles that are <code>tileSize</code> in length, create a program that will figure out how many tiles it would take to tile the floor and two adjacent walls of the shower.</p>
+            </li>
+            <li>
+                <p>This question requires calculus. You have a <code>length</code> by <code>width</code> piece of paper. You cut out squares that are all <code>x</code> units in length out of each of the corners. You then fold up the sides to form a box. Given the length and width of the piece of paper, write a program that will find the value of <code>x</code> that will maximize the volume of the box.</p>
+            </li>
+            <li>
+                <p>Given two points, calculate the distance between the two points. d = sqrt((x2 - x1)^2 + (y2 - y1)^2).</p>
+            </li>
+            <li>
+                <p>Steve gets tested for an STD. If someone has the STD, there is a <code>probTruePositive</code> chance that the test will correctly identify the presence of the STD. If someone doesn't have the STD, there is a <code>probTrueNegative</code> chance that the test will correctly identify the non-presence of the STD. There is a <code>probSTD</code> chance that someone has the STD. Probabilities are decimal numbers from 0 to 1, (for example, if every 1 out of 100 people have the STD, then <code>probSTD == 0.01</code>, if the test has a 99% accuracy for true positives, <code>probTruePositive == 0.99</code>). Write a program that will calculate the probability that Steve has the STD if he tests positive.</p>
+                <details>
+                    <summary>Hint</summary>
+                    Use Bayes Theorem: P(H|E) = P(E|H)P(H)/P(E) <a target="_blank" href="https://www.youtube.com/watch?v=HZGCoVF3YvM">Bayes Theorem</a>
+                </details>
+            </li>
+            <li>
+                <p>Write a program that will create the following pattern up to a certin number of lines:</p>
+                <pre>1
+22
+333
+4444
+55555
+666666
+...</pre>
+            </li>
+            <li>
+                <p>Write a program that reverses a string. For example, <code>"The quick brown fox"</code> becomes <code>"xof nworb kciuq ehT"</code>.</p>
+            </li>
+            <li>
+                <p>Given the initial value, interest rate, and the number of times compounded per year, create a program that calculates compound interest after a given number of years.</p>
+            </li>
+            <li>
+                <p>Create a program that prints out the factorial of a given number. Ask the user for a number and print the factorial of the number. The factorial of a number is the product of all the positive integers less than or equal to that number and is represented by "!" followed by the number. For example, 3! = 3 * 2 * 1 = 6, and 7! = 7 * 6 * 5 * 4 * 3 * 2 * 1 = 5040.</p>
+            </li>
+            <li>
+                <p>Write a program that finds the sum of all the even numbers between the two numbers <code>min</code> and <code>max</code>. For example, if <code>min = 10</code> and <code>max = 20</code>, the program should find the sum 10 + 12 + 14 + 16 + 18 + 20 = 90. If <code>min = 15</code> and <code>max = 20</code>, the program should find the sum 16 + 18 + 20 = 54.</p>
+            </li>
+            <li>
+                <p>Write a program that determine if a given number is prime or not.</p>
+            </li>
+            <li>
+                <p>Write a program to check the weather. Ask the user to enter the temperature. If it is 40 and below display “too cold”. If it is above 40 and below 60 display “cold”, if it is 60 and above and below 75 display “warm”, otherwise display “hot”.</p>
+            </li>
+            <li>
+                <p>Write a program that calculates the sum: 1/2 + 2/3 + 4/5 + 5/6 ... up to a certain number of terms.</p>
+            </li>
+            <li>
+                <p>This question requires calculus. Create a program that will find the area under a graph using a right hand Riemann sum. Define the graph in a method called <code>f(double x)</code>. The graph can be whatever you want as long as it is a continuous function. Ask the user for the start and end points of the area. Also ask the user for the number of partitions. Use these values to compute the area under the curve and print the result.</p>
+            </li>
+            <li>
+                <p>Create a program that encrypts and decrypts messages using the Vigenère cipher. The Vigenère cipher encrypts each letter with a different Caesar cipher. The Caesar cipher used depends on a repeating key word. Each letter of the key word is paired with a letter from the message you want to encrypt. If the message is longer than they key word, the key word repeats for as long as it needs to. For each of these pairs, a table is used to determine the corresponding letter in the encrypted text:</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Vigen%C3%A8re_square_shading.svg/480px-Vigen%C3%A8re_square_shading.svg.png" alt="The Vigenère square or Vigenère table" style="max-width: 480px;">
+                <p>The column represents the message, the row represents the keyword, and where they intersect is the encrypted text. For example, I have a message "PROGRAMMING IS FUN" and a key word "DUCK". I repeat the key word until it is the same length as the message and pair up the letters:</p>
+                <pre>PROGRAMMING IS FUN
+DUCKDUCKDUC KD UCK</pre>
+                <p>Our first pair of letters is P and D, so we look up P and D in our table and find S, so S is the first letter of our encrypted text. The next pair is R and U, so we find R and U in our table and find L, so L is the next letter of out encrypted text. We do this for the whole message and we get "SLQQUUOWLHI SV ZWX" as our encrypted text. If you look closely at the table, you will might notice that each letter of the key word defines a Caesar cipher. The index of the letter is the shift value for a Caesar cipher performed on the corresponding letter of the message. In our previous example, D is the 4th letter of the alphabet, minus 1 is 3, so we perform a Caesar cipher with shift 3 to the letter P, which gives us S, the first letter of out encrypted text. U is the 21st letter of the alphabet, so we apply a Caesar cipher with shift 20 to the letter R, which gives us L. You could also think of it as for each letter of the key word, use a Caesar cipher in which that letter of the key word becomes A. The Caesar cipher in which D becomes A is one with a shift of 3. The Caesar cipher in which U becomes A is one with a shift of 20.</p>
+            </li>
+            <li>
+                <p>Create a program that will find the sum of the elements of an array. For example, the sum of the array <code>{2, 4, 3, 7, 5, 6}<code> is 27.</p>
+            </li>
+            <li>
+                <p>Create a program that will find the sum of all the odd numbers in an array. For example, for the array <code>{1, 2, 3, 5, 6, 7, 11}</code> should find the sum 1 + 3 + 5 + 7 + 11 = 27.</p>
+            </li>
+            <li>
+                <p>Create a program that will find the minimum, maximum, median, Q1, Q2, and average of a given array. For example, for the array <code>{2, 2, 3, 3, 4, 5, 5, 5, 6, 6, 7, 8, 8, 10, 12}</code>, the minimum is 2, Q1 is 3, the median is 5, Q3 is 8, the maximum is 12, and the average is 5.7333.</p>
+            </li>
+            <li>
+                <p>Write a program that prints out an array where each element of the array is randomly either "Red", "Blue", or "Green".</p>
+            </li>
+            <li>
+                <p>Create a program that prints out the digits of the game FizzBuzz. If you are unfamiliar with the game, you count up starting from 1. If the number is a multiple of 3, you say Fizz. If the number is a multiple of 5, you say Buzz. If instead the number is a multiple of 3 and 5, you say FizzBuzz. Otherwise, you just say the number. Here is a sample output:</p>
+                <pre>1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz</pre>
+                <p>... and so on.</p>
+            </li>
+            <li>
+                <p>Create a program that uses random numbers to calculate π.</p>
+            </li>
+            <li>
+                <p> Create a program that will calculate the number of things will you have on the nth day of Christmas (from the song "The Twelve Days of Christmas"). For example, figure out how many things you will have on the 4 day of Christmas. On the first day you get 1 thing, on the second day you get 1 + 2 things, on the third day you get 1 + 2 + 3, things, and on the fourth day you get 1 + 2 + 3 + 4 things. So on the fourth day of Christmas, you will have (1) + (1 + 2) + (1 + 2 + 3) + (1 + 2 + 3 + 4) = 20 things.</p>
+            </li>
+            <li>
+                <p>Colleges increase the semester tuition by certain percentages. Alice wants to start school but she wants to know the total cost of her education. Write a program that asks the user for the current tuition per semester, yearly increase rate, and number of years to get the degree. Your program should display the yearly tuition and also the total money needed for the given number of years. Here is a sample output:</p>
+                <pre>Enter the current tuition per semester: 3000
+Enter the percent of tuition raise:3.5
+Enter the number of the years you will be at school: 5
+year 1 tuition 6000.0
+year 2 tuition 6210.0
+year 3 tuition 6427.35
+year 4 tuition 6652.307250000001
+year 5 tuition 6885.138003750001
+Total tuition paid for all 5 years is 32174.795253750002</pre>
+            </li>
+        </ul>
     </div>
     <footer>
         <p>© 2020 ***DEADNAME*** Robillard</p>
